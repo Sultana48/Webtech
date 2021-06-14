@@ -9,10 +9,17 @@
     </style>
 </head>
 <body>
-	
+<p><span style="color: red;">*</span> - Denotes Required Information </p>
+<span><a href="#donation"> > 1 Donation  </a></span>
+  <span><a href="#confirm"> > 2 Confirmation  </a></span>
+  <span><a href="#thank"> > 3 Thank You!  </a></span> <br>
+  <br>
+  
 	<form>
 		<fieldset>
-		<legend ><span style="color:red;">Donor Information</span></legend>
+			
+		<legend ><span style="color:red;"><b>Donor Information</span></b><span></legend>
+
 
 		First Name<span style="color: red;">*</span> <input type="text" name="first_name"  > <br>
 		Last  Name<span style="color: red;">*</span>  <input type="text" name="last_name"  > <br>
@@ -51,23 +58,72 @@
 				<input type="radio" name="amount"  > $250
 				<input type="radio" name="amount"  > Other <br>
 
-				<p>(check a button or type in your <br/> amount) Other Amount $ <input type="text" name="other amount" </p> <br> 
+				<sub>(check a button or type in your  amount) </sub>
+
+					Other Amount $ <input type="text" name="other amount"
 
 		Recurring Donation <input type="checkbox">I am interested in giving on a regular basis.
 		<p>(check if yes)</p>
 		Monthly Credit Card $ <input type="checkbox">
-		         For Months $<input type="checkbox">
+		         For Months $<input type="checkbox"> 
+		         <br>
 
-		<legend ><span style="color:red;">Honorarium and Memorial Donation Information</span></legend>
+
+		<legend ><span style="color:red;"><b>Honorarium and Memorial Donation Information</span></b></legend>
+		
 		
 		I would like to make this <input type="radio" name=" amount" > To Honor<br> 
-		                          <input type="radio" name="amount"  > In Memory Of<br>
+		                  donation <input type="radio" name="amount"  > In Memory Of<br>
+
+		Name <input type="text" name="name"  > <br>
+		Acknowledge Donation to <input type="text" name="acknowledge donation to"  > <br>
+		Address <input type="text" name="address"  > <br>
+		City <input type="text" name="city"  > <br>
+		State  
+			<select name="State" >
+				<option disabled="disabled" selected="selected">Select a State</option>
+				<option value="Dhaka">Dhaka</option>
+				<option value="Melbourne">Melbourne</option>
+				<option value="Toronto">Toronto</option>
+				<option value="Canada" >Canada</option>
+			</select> <br>
+		Zip <input type="text" name="zip"  > <br>
+		<br>
+	
+
+		<legend ><span style="color:red;"><b>Additional Information</span></b></legend>
+		Please enter your name,company or organization as you would like it to appear in our publiccations: <br>
+		
+		Name <input type="text" name="name"  > <br>
+	
+
+		<p><input type="checkbox">I would like my gift to remain anonymous.</p>
+		<p><input type="checkbox">My employer offer a maching gift program. I will mail the matching gift form.</p>
+		<p><input type="checkbox">Please save the cost of accknowledging this gift by not mailing a thank you letter.</p>
 
 		
-		
-
-                       <input type="Reset" value="Reset">
-                       <input type="Continue" value="Continue">
+		Comments
+		<sub>(Please type any questions or feedback here)</sub>
+		<textarea placeholder="" name="comments" rows="5" cols="40"></textarea> <br>
+	<b>How may we contact you?</b>
+  	<input type="checkbox" id="mail" name="mail">
+  	<label for="mail2">E-mail</label><br>
+  	<input type="checkbox" id="postm" name="postm">
+  	<label for="postalm">Postal Mail</label><br>
+  	<input type="checkbox" id="telephone" name="telephone">
+  	<label for="telephone">Telephone</label><br>
+  	<input type="checkbox" id="fax" name="fax">
+  	<label for="fax">Fax</label><br>
+  	<p>I would like to recieve newsletters and information about special events by:</p>
+  	<input type="checkbox" id="mail" name="mail">
+  	<label for="mail">E-mail</label><br>
+  	<input type="checkbox" id="postalm" name="postalm">
+  	<label for="postalm">Postal Mail</label><br>
+  	
+  	<br>      	
+    
+    <input type="Reset" value="Reset">
+    <input type="Continue" value="Continue">
 
 </fieldset>
 	</form>
